@@ -1,8 +1,7 @@
 'use client'
 import React from 'react'
 import {Hamburger , MagnifyingGlass} from '@phosphor-icons/react/dist/ssr'
-import { useState } from 'react'
-import { hamburguers } from '@/data/array-hamburguers'
+
 
 export function Header({onBuscar, search, setSearch}) {
 

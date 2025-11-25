@@ -3,8 +3,8 @@ import React from 'react';
 import DetalhesHamburguer from './detalhesHamburguer';
 import { hamburguers } from '@/data/array-hamburguers';
 
-export default function Page({ params }) {
-  const { id } = params; 
+export default async function Page({ params }) {
+  const { id } = await params; 
   const hamburguer = hamburguers.find(h => String(h.id) === String(id));
 
   if (!hamburguer) {

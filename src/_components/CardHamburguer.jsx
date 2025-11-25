@@ -6,7 +6,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import {StarIcon} from '@phosphor-icons/react/dist/ssr'
-import {hamburguers} from '@/data/array-hamburguers'
 
 export function CardHamburguer({hamburguers}) {
   if(!hamburguers) return null;
@@ -32,7 +31,7 @@ export function CardHamburguer({hamburguers}) {
             
              <div className='flex flex-col  justify-center '>
               
-              <h3 className=' flex justify-center w-[95%] max-[330px]:mb-3 mb-6 mt-[-15px] h-5 font-semibold break-words lg:break-all'>{hamburguers.name}</h3>
+              <h3 className='px-2 text-center flex justify-center w-[95%] max-[330px]:mb-3 mb-5 lg:mb-8 mt-[-18px] h-5 font-semibold break-words '>{hamburguers.name}</h3>
              
               <p className='text-[1rem] mx-1 mt-6  mb-[-16px] md:mb-0 md:mt-0 '> 
                 {hamburguers.price.toLocaleString('pt-BR' , {
@@ -42,9 +41,9 @@ export function CardHamburguer({hamburguers}) {
               </p>
 
               <div className='flex max-[330px]:mt-5 mt-6 md:mt-0   max-[330px]:flex-col-reverse  flex-row justify-between items-center px-1 '>
-                 <Link href={`/hamburguer/${hamburguers.id}`} className="text-red-500 hover:underline">
+                 <p  className="text-red-500 hover:underline">
                      Ver mais...
-                 </Link>
+                 </p>
                 <p className='flex items-center gap-1 max-[330px]:hidden'>
                     {hamburguers.star}
                     <StarIcon className='text-yellow-500'/>

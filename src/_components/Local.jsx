@@ -9,9 +9,9 @@ export function Local() {
            <iframe 
              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23990.463710571326!2d-52.36402414573895!3d-31.773839201151226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9511b5945aa7eb05%3A0x2eaea54de04152e7!2sCentro%2C%20Pelotas%20-%20RS!5e1!3m2!1spt-BR!2sbr!4v1762262003620!5m2!1spt-BR!2sbr" 
              style={{border:0}} 
-             allowfullscreen="" 
+             allowFullScreen 
              loading="lazy" 
-             referrerpolicy="no-referrer-when-downgrade"
+             referrerPolicy="no-referrer-when-downgrade"
              className='w-full h-full block shadow-lg'>
         </iframe>
         </div>

@@ -49,12 +49,7 @@ export default  function Page({item}) {
    }
    
    const valor = Number(hamburguer.price) * quantidade
-   valor.toString()
-
-   if(valor.length < 4){
-      valor + "0"
-   }
-  
+   
  return (
 
 <section className=' relative  w-full h-full flex  gap-10 flex-col justify-center items-center   '>
